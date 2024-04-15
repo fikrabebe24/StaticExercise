@@ -6,11 +6,16 @@ namespace StaticExercise
     {
         static void Main(string[] args)
         {
-            var celsius = TempConverter.FahrenheitToCelsius(68); // 20
-            var fahrenheit = TempConverter.CelsiusToFahrenheit(20); //68
+            double celsius = TempConverter.FahrenheitToCelsius(55); // 
+            double roundedAnswer1 = Math.Round(celsius);
+            Console.WriteLine(roundedAnswer1);
+
+            double fahrenheit = TempConverter.CelsiusToFahrenheit(20); //68
+            double roundedAnswer2 = Math.Round(fahrenheit);
+            Console.WriteLine(roundedAnswer2);
 
             Console.WriteLine("After conversion:");
-            Console.WriteLine($"celcius {celcius}");
+            Console.WriteLine($"celsius {celsius}");
             Console.WriteLine($"fahrenheit {fahrenheit}");
         }
     }
